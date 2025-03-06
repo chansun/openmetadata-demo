@@ -1,4 +1,4 @@
-FROM openmetadata/ingestion:1.4.4
+FROM docker.getcollate.io/openmetadata/ingestion:1.6.5
 
 # Let's use the same workdir as the ingestion image
 WORKDIR ingestion
