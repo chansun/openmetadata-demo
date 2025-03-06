@@ -9,4 +9,4 @@ COPY connector connector
 COPY setup.py .
 COPY sample.csv .
 COPY person_info.proto .
-RUN pip install --no-deps .
+RUN pip install --no-deps . && pip install faker
