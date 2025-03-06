@@ -1,4 +1,4 @@
-FROM docker.getcollate.io/openmetadata/ingestion:1.6.5
+FROM openmetadata/ingestion:1.4.4
 
 # Let's use the same workdir as the ingestion image
 WORKDIR ingestion
@@ -9,4 +9,4 @@ COPY connector connector
 COPY setup.py .
 COPY sample.csv .
 COPY person_info.proto .
-RUN pip install --no-deps . && pip install faker
+RUN pip install --no-deps .
